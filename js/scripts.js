@@ -12,3 +12,11 @@ $(document).ready(function() {
     $(".objhidden").toggle();
   });
 });
+
+var iRandomNumber;
+var iRollDice;
+var i;
+
+iRandomNumber = Math.ceil(Math.random()*6);
+
+document.result(iRandomNumber);
