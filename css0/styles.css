@@ -20,3 +20,25 @@ h3 {
 .objectives{
   cursor: pointer;
 }
+.ruleshidden{
+  text-align: center;
+  background-color: pink;
+
+}
+.rulesshowing{
+  display: none;
+}
+.htphidden {
+  text-align: center;
+  background-color: yellow;
+}
+.htpshowing {
+  display: none;
+}
+.objhidden {
+  text-align: center;
+  background-color: green;
+}
+.objshowing {
+  display: none;
+}
