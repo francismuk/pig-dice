@@ -1,0 +1,22 @@
+h1 {
+  color: red;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  font-family: 'Bowlby One SC', cursive
+}
+
+.about {
+  font-family: 'Fondamento', cursive;
+}
+.rules{
+  cursor: pointer;
+}
+.htp{
+  cursor: pointer;
+
+}
+.objectives{
+  cursor: pointer;
+}
