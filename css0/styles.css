@@ -42,3 +42,15 @@ h3 {
 .objshowing {
   display: none;
 }
+.top {
+  text-align: center;
+}
+.objhidden:hover {
+  text-decoration: underline;
+}
+.ruleshidden:hover {
+  text-decoration: underline;
+}
+.htphidden:hover {
+  text-decoration: underline;
+}
