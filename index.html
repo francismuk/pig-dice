@@ -84,26 +84,17 @@
       <div class="row" id="playing">
         <div class="col-md-6" id="p1">
           <h3>Player 1</h3>
-          <p id="p1score"></p>
+          <h3 id="p1score"></h3>
         </div>
         <div class="col-md-6" id="p2">
           <h3>Player 2</h3>
-          <p id="p2score"></p>
+          <h3 id="p2score"></h3>
         </div>
       </div>
-      <div class="row" id="button">
-        <div class="col-md-6">
-          <button id="p1-btn" type="button" class="btn btn-success" onclick="myFunction()" name="button">Roll Dice</button>
-          <button id="p1-hold" type="button" class="btn btn-warning" name="button"  >Hold</button>
-        </div>
-        <div class="col-md-6">
-          <button id="p2-btn" type="button" class="btn btn-success" onclick="my2Function()" name="button">Roll Dice</button>
-          <button id="p2-hold" type="button" class="btn btn-warning" name="button"  >Hold</button>
-        </div>
-      </div>
+
       <div class="row" id="tally">
         <div class="col-md-6" id="red" >
-          <div class="tallyOne">
+          <div class="tallyOne" >
             <p id="demo"></p>
             <p id="demo2"></p>
             <p id="total"></p>
@@ -117,6 +108,18 @@
           </div>
         </div>
       </div>
+      <div class="row" id="button">
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <button id="p1-btn" type="button" class="btn btn-success" onclick="myFunction()" name="button">Roll Dice</button>
+          <button id="p1-hold" type="button" class="btn btn-warning" name="button"  >Hold</button>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4">
+          <button id="p2-btn" type="button" class="btn btn-success" onclick="my2Function()" name="button">Roll Dice</button>
+          <button id="p2-hold" type="button" class="btn btn-warning" name="button"  >Hold</button>
+        </div>
+      </div>
 
       <div class="row" id="scores">
         <div class="col-md-6">
@@ -128,7 +131,7 @@
           <p id="p2-held"></p>
         </div>
       </div>
-      <button type="button" class="btn btn-danger" name="button" onclick="resetGame()">Reset Game</button>
+      <button id="reset" type="button" class="btn btn-danger" name="button" onclick="resetGame()">Reset Game</button>
 
 
 
