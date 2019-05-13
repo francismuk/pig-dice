@@ -17,132 +17,121 @@
     </div>
     <div class="container">
       <div class= jumbotron>
-      <div class="about">
-        <div class= row>
-          <div class= col-md-4>
-            <div class="rules">
-              <div class="ruleshidden">
-                <img src="images/registered-regular.svg" height="100" width="100" alt="">
-                <h3>Rules</h3>
+        <div class="about">
+          <div class= row>
+            <div class= col-md-4>
+              <div class="rules">
+                <div class="ruleshidden">
+                  <img src="images/registered-regular.svg" height="100" width="100" alt="">
+                  <h3>Rules</h3>
+                </div>
+                <div class="rulesshowing">
+                  <h3>Rules</h3>
+                  <p>Here are the rules for playing this game</p>
+                  <ul>
+                    <li>Roll on every turn</li>
+                    <li>All your points will be recorded</li>
+                    <li>Roll 1 or more time until you want to</li>
+                    <li>if you get a one in any of your rolls you get a 0 for that round</li>
+                  </ul>
+                </div>
               </div>
-              <div class="rulesshowing">
-              <h3>Rules</h3>
-              <p>Here are the rules for playing this game</p>
-              <ul>
-                <li>Roll on every turn</li>
-                <li>All your points will be recorded</li>
-                <li>Roll 1 or more time until you want to</li>
-                <li>if you get a one in any of your rolls you get a 0 for that round</li>
-              </ul>
             </div>
-          </div>
-          </div>
 
+            <div class= col-md-4>
+              <div class="htp">
+                <div class="htphidden">
+                  <img src="images/info-circle-solid.svg" height="100" width="100" alt="">
+                  <h3>Instructions</h3>
+                </div>
+                <div class="htpshowing">
 
-          <div class= col-md-4>
-            <div class="htp">
-              <div class="htphidden">
-                <img src="images/info-circle-solid.svg" height="100" width="100" alt="">
-                <h3>Instructions</h3>
+                  <h3>How to play</h3>
+                  <ul>
+                    <li>Ensure that you know the objectives of this game</li>
+                    <li>Read through the rules on the link provided</li>
+                    <li>Roll the dice by pressing the roll button</li>
+                    <li>Roll again if you want to(You may roll as many times as you want if you feel you are lucky)</li>
+                    <li>When you are done the opponent does the same thing</li>
+                    <li>Always make sure that you are having fun</li>
+                  </ul>
+                </div>
               </div>
-              <div class="htpshowing">
-
-              <h3>How to play</h3>
-              <ul>
-                <li>Ensure that you know the objectives of this game</li>
-                <li>Read through the rules on the link provided</li>
-                <li>Roll the dice by pressing the roll button</li>
-                <li>Roll again if you want to(You may roll as many times as you want if you feel you are lucky)</li>
-                <li>When you are done the opponent does the same thing</li>
-                <li>Always make sure that you are having fun</li>
-              </ul>
             </div>
-          </div>
-          </div>
 
-          <div class= col-md-4>
-          <div class="objectives">
-          <div class="objhidden">
-            <img src="images/check-circle-solid.svg" height="100" width="100" alt="">
-            <h3>Objectives</h3>
-          </div>
-          <div class="objshowing">
-            <h3>Objectives</h3>
-            <ul>
-              <li>The main objective is to score 100 points before your opponent</li>
-              <li>Have fun!</li>
-            </ul>
-            </div>
+            <div class= col-md-4>
+              <div class="objectives">
+                <div class="objhidden">
+                  <img src="images/check-circle-solid.svg" height="100" width="100" alt="">
+                  <h3>Objectives</h3>
+                </div>
+                <div class="objshowing">
+                  <h3>Objectives</h3>
+                  <ul>
+                    <li>The main objective is to score 100 points before your opponent</li>
+                    <li>Have fun!</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <button type="button" class="btn btn-success" name="button" autofocus >Start!</button>
+
+      <div class="gameplay">
+        <div class="row" id="playing">
+          <div class="col-md-6" id="p1">
+            <h3>Player 1</h3>
+            <h3 id="p1score"></h3>
+          </div>
+          <div class="col-md-6" id="p2">
+            <h3>Player 2</h3>
+            <h3 id="p2score"></h3>
+          </div>
+        </div>
+
+        <div class="row" id="tally">
+          <div class="col-md-6" id="red" >
+            <div class="tallyOne" >
+              <p id="demo"></p>
+              <p id="demo2"></p>
+              <p id="total"></p>
+            </div>
+          </div>
+          <div class="col-md-6" id="blue">
+            <div class="tallyTwo">
+              <p id="demo3"></p>
+              <p id="demo4"></p>
+              <p id="total2"></p>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="button">
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <button id="p1-btn" type="button" class="btn btn-success" onclick="myFunction()" name="button">Roll Dice</button>
+            <button id="p1-hold" type="button" class="btn btn-warning" name="button"  >Hold</button>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-4">
+            <button id="p2-btn" type="button" class="btn btn-success" onclick="my2Function()" name="button">Roll Dice</button>
+            <button id="p2-hold" type="button" class="btn btn-warning" name="button"  >Hold</button>
+          </div>
+        </div>
+
+        <div class="row" id="scores">
+          <div class="col-md-6">
+            <p>Player 1 Score</p>
+            <p id="p1-held"></p>
+          </div>
+          <div class="col-md-6">
+            <p>Player 2 Score</p>
+            <p id="p2-held"></p>
+          </div>
+        </div>
+        <button id="reset" type="button" class="btn btn-danger" name="button" onclick="resetGame()">Reset Game</button>
     </div>
-
-
-    <div class="gameplay">
-      <div class="row" id="playing">
-        <div class="col-md-6" id="p1">
-          <h3>Player 1</h3>
-          <h3 id="p1score"></h3>
-        </div>
-        <div class="col-md-6" id="p2">
-          <h3>Player 2</h3>
-          <h3 id="p2score"></h3>
-        </div>
-      </div>
-
-      <div class="row" id="tally">
-        <div class="col-md-6" id="red" >
-          <div class="tallyOne" >
-            <p id="demo"></p>
-            <p id="demo2"></p>
-            <p id="total"></p>
-          </div>
-        </div>
-        <div class="col-md-6" id="blue">
-          <div class="tallyTwo">
-            <p id="demo3"></p>
-            <p id="demo4"></p>
-            <p id="total2"></p>
-          </div>
-        </div>
-      </div>
-      <div class="row" id="button">
-        <div class="col-md-2"></div>
-        <div class="col-md-4">
-          <button id="p1-btn" type="button" class="btn btn-success" onclick="myFunction()" name="button">Roll Dice</button>
-          <button id="p1-hold" type="button" class="btn btn-warning" name="button"  >Hold</button>
-        </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-4">
-          <button id="p2-btn" type="button" class="btn btn-success" onclick="my2Function()" name="button">Roll Dice</button>
-          <button id="p2-hold" type="button" class="btn btn-warning" name="button"  >Hold</button>
-        </div>
-      </div>
-
-      <div class="row" id="scores">
-        <div class="col-md-6">
-          <p>Player 1 Score</p>
-          <p id="p1-held"></p>
-        </div>
-        <div class="col-md-6">
-          <p>Player 2 Score</p>
-          <p id="p2-held"></p>
-        </div>
-      </div>
-      <button id="reset" type="button" class="btn btn-danger" name="button" onclick="resetGame()">Reset Game</button>
-
-
-
-
-
-
-
-
-    </div>
-
-
   </div>
   </body>
 </html>

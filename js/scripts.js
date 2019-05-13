@@ -29,7 +29,7 @@ var p1 = [];
 var p2 = [];
 var p1held = [];
 var p2held = [];
-var p2score = 0;
+var p2score = 10;
 
 
 function myFunction() {
