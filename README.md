@@ -19,6 +19,15 @@ This app does not need you to run a server or install dependencies. All you need
 * Markdown Syntax.
 ## Known Bugs
 All known issues/bugs in this project have been fully resolved. 
+## BDD
+|Input                            | Output                                                                  |
+|:-------------------------------:|------------------------------------------------------------------------:|
+|Player clicks on roll button     | Both dice are rolled and sum added if 1 is not among the numbers on dice|
+|Player presses hold button       | It is the other player's turn                                           |
+|Player presses reset button      | Game is reset and results start from 0                                  |
+
+ 
+
 ## Technologies Used
 In this app I have used HTML to make it and CSS to style the app and java script to make it more user friendly.
 ## Support and contact details
