@@ -52,7 +52,7 @@ function myFunction() {
         $("#p2-btn").show();
         $("#p1-btn").hide();
         $("#p2").addClass("p2turn");
-        $("#p-one").removeClass("p2turn");
+        $("#p1").removeClass("p2turn");
         $("#p2-hold").show();
         $("#p1-hold").hide();
         document.getElementById("p1score").innerHTML = 0;
@@ -115,7 +115,7 @@ $(document).ready(function () {
         $("#p2-btn").hide();
         $("#p1").addClass("p2turn");
         $("#p2").removeClass("p2turn");
-        $("#p1hold").show();
+        $("#p1-hold").show();
         document.getElementById("p2score").innerHTML = 0;
         p2 = [];
         p2score = 0;

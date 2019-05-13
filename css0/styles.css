@@ -1,3 +1,8 @@
+body{
+  background-image: url(https://cdn.pixabay.com/photo/2015/08/17/18/23/balloons-892806_960_720.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 h1 {
   color: red;
   text-align: center;
@@ -58,5 +63,27 @@ h3 {
   background-color: blue;
 }
 #p2 {
-  background-color:
+  background-color: red;
+}
+#scores{
+  background-color: #6DD89F;
+  color: white;
+  padding: 2%;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 20px;
+  text-align: center;
+}
+#tally{
+  /* background-color: #6DD89F; */
+  color: black;
+  padding: 2%;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 20px;
+  text-align: center;
+}
+#red {
+  background-color: #FA9797;
+}
+#blue {
+  background-color: #97FAFA;
 }
