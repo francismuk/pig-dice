@@ -80,42 +80,64 @@
     </div>
 
 
-
-        <div class="wrapper clearfix">
-          <div class="player-0-panel active">
-            <div class="playername" id="name1">Player 1</div>
-            <div class="playerscore"id="score1">50</div>
-            <div class="player-current-box">
-              <div class="player-current-label">Current</div>
-              <div class="player-current-score" id="current-1">11</div>
-              </div>
-            </div>
-            </div>
-
-            <div class="player-1-panel">
-     <div class="player-name" id="name-1">Player 2</div>
-     <div class="player-score" id="score-1">50</div>
-     <div class="player-current-box">
-         <div class="player-current-label">Current</div>
-         <div class="player-current-score" id="current-1">11</div>
-     </div>
- </div>
-
-
- <button class="btn-new">
-     <i class="ion-ios-plus-outline"></i> New Game
- </button>
- <button class="btn-roll">
-     <i class="ion-ios-loop"></i> Dice Roll
- </button>
- <button class="btn-hold">
-     <i class="ion-ios-download-outline"></i> Hold
- </button>
-
- <input type="text" class="final-score" placeholder="Final Score"
-
+    <div class="gameplay">
+      <div class="row" id="playing">
+        <div class="col-md-6" id="p1">
+          <h3>Player 1</h3>
+          <p id="p1score"></p>
         </div>
+        <div class="col-s6-m6" id="p2">
+          <h3>Player 2</h3>
+          <p id="p2score"></p>
+        </div>
+      </div>
+      <div class="row" id="button">
+        <div class="col-md-6">
+          <button id="p1-btn" type="button" class="btn btn-success" onclick="myFunction()" name="button">Roll Dice</button>
+          <button id="p1-hold" type="button" class="btn btn-warning" name="button"  >Hold</button>
+        </div>
+        <div class="col-md-6">
+          <button id="p2-btn" type="button" class="btn btn-success" onclick="my2Function()" name="button">Roll Dice</button>
+          <button id="p2-hold" type="button" class="btn btn-warning" name="button"  >Hold</button>
+        </div>
+      </div>
+      <div class="row" id="tally">
+        <div class="col-md-6">
+          <div class="tallyOne">
+            <p id="demo"></p>
+            <p id="demo2"></p>
+            <p id="total"></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tallyTwo">
+            <p id="demo3"></p>
+            <p id="demo4"></p>
+            <p id="total2"></p>
+          </div>
+        </div>
+      </div>
 
+      <div class="row" id="scores">
+        <div class="col-md-6">
+          <p>Player One held!!</p>
+          <p id="p1-held"></p>
+        </div>
+        <div class="col-md-6">
+          <p>Play Two held!!</p>
+          <p id="p2-held"></p>
+        </div>
+      </div>
+      <button type="button" class="btn btn-danger" name="button" onclick="resetGame()">Reset Game</button>
+
+
+
+
+
+
+
+
+    </div>
 
 
   </div>
